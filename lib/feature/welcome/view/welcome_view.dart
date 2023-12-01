@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/extensions/context_extension.dart';
+import '../../notification/view/notification_view.dart';
 import 'widgets/welcome_description.dart';
 import 'widgets/welcome_image.dart';
 
@@ -9,7 +11,7 @@ class WelcomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     backgroundColor: Colors.white,
+      backgroundColor: Colors.white,
       body: Column(
         children: [
           const Expanded(
@@ -24,7 +26,10 @@ class WelcomeView extends StatelessWidget {
               alignment: Alignment.topCenter,
               child: FloatingActionButton(
                 backgroundColor: Colors.deepOrange[700],
-                onPressed: () {  },
+                onPressed: () {
+                  context.push(const NotificationView());
+
+                },
                 child: const Icon(Icons.chevron_right),
               ),
             ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/extensions/context_extension.dart';
 import '../../../product/fake/notification/notifications.dart';
 import '../model/notification_model.dart';
 import 'widgets/notification_list_tile.dart';
@@ -10,18 +11,18 @@ class NotificationView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(),
+      appBar: buildAppBar(context),
       body: ListView.builder(
           itemCount: FakeNotifications.notifications.length,
           itemBuilder: (ctx, i) {
             final NotificationModel notification =
                 FakeNotifications.notifications[i];
-            return NotificationListTile(notification:notification);
+            return NotificationListTile(notification: notification);
           }),
     );
   }
 
-  AppBar buildAppBar() {
+  AppBar buildAppBar(BuildContext context) {
     return AppBar(
       leading: IconButton(
         icon: const Icon(
@@ -29,7 +30,9 @@ class NotificationView extends StatelessWidget {
           color: Colors.black,
           size: 30,
         ),
-        onPressed: () {},
+        onPressed: () {
+          context.pop();
+        },
       ),
       title: const Text(
         'Notifications',
