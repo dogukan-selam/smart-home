@@ -8,7 +8,7 @@ class FakeNotifications {
         isRead: false,
         type: 'notification'),
     NotificationModel(
-        title: 'You have an overpayment on your heating bill',
+        title: 'You have an overpayment on your ',
         description: '',
         isRead: false,
         type: 'notification'),
@@ -28,7 +28,7 @@ class FakeNotifications {
         isRead: false,
         type: 'notification'),
     NotificationModel(
-        title: 'You have an overpayment on your heating bill',
+        title: 'You have an overpayment on your heating',
         description: '',
         isRead: false,
         type: 'notification'),
@@ -48,7 +48,7 @@ class FakeNotifications {
         isRead: false,
         type: 'notification'),
     NotificationModel(
-        title: 'You have an overpayment on your heating bill',
+        title: 'You have an overpayment on your heating',
         description: '',
         isRead: false,
         type: 'notification'),

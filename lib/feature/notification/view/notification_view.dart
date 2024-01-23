@@ -15,9 +15,8 @@ class NotificationView extends StatelessWidget {
       body: ListView.builder(
           itemCount: FakeNotifications.notifications.length,
           itemBuilder: (ctx, i) {
-            final NotificationModel notification =
-                FakeNotifications.notifications[i];
-            return NotificationListTile(notification: notification);
+            return NotificationListTile(
+                notification: FakeNotifications.notifications[i]);
           }),
     );
   }

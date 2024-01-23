@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'feature/settings/view/settings.view.dart';
 import 'feature/welcome/view/welcome_view.dart';
 
 void main() {
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         ),
         scaffoldBackgroundColor: Colors.white
       ),
-      home: const WelcomeView(),
+      home: const SettingsView(),
     );
   }
 }
