@@ -46,7 +46,26 @@ class SettingsView extends StatelessWidget {
             title: "Location",
             value: "İstanbul ,Türkiye",
           ),
+          Padding(
+            padding: const EdgeInsets.only(top: 34,left: 24),
+            child: Align(child: Text("Permissions",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18
+
+            )),alignment: Alignment.centerLeft),
+          ),
+          PermissionsRow(
+            title: 'Save Data',
+            icon: Icons.save,
+          ),
+          PermissionsRow(
+            title: 'Allow Location',
+            icon: Icons.location_history,
+          ),
+          PermissionsRow(
+            title: 'Enable Face ID',
+            icon: Icons.face,
+          )
         ],
+
       ),
     );
   }
@@ -72,7 +91,7 @@ class SettingsTitleValue extends StatelessWidget {
         children: [
           Expanded(
             child: Align(
-              alignment: Alignment.center,
+              alignment: Alignment.centerLeft,
               child: Text(
                 title,
                 style: TextStyle(fontSize: 16),
@@ -86,9 +105,36 @@ class SettingsTitleValue extends StatelessWidget {
               style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.bold,
-                  decoration: isUnderline ? TextDecoration.underline : null),
+                  decoration: isUnderline ? TextDecoration.underline : null,),
+
             ),
           ),
+        ],
+      ),
+    );
+  }
+}
+
+class PermissionsRow extends StatelessWidget {
+  const PermissionsRow({
+    required this.title,
+    required this.icon,
+    super.key,
+  });
+  final IconData icon;
+  final String title;
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 24),
+      child: Row(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(right: 30),
+            child: Icon(icon),
+          ),
+          Expanded(child: Text(title)),
+          Switch(value: true, onChanged: (bool value) {})
         ],
       ),
     );
