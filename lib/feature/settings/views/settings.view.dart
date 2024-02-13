@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/constants/image_constants.dart';
+import '../../../core/extensions/context_extension.dart';
 import '../../../core/widgets/image/base_asset_image.dart';
+import 'preferences_view.dart';
 
 class SettingsView extends StatelessWidget {
   const SettingsView({super.key});
@@ -10,10 +12,12 @@ class SettingsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.black),
-          onPressed: () {},
-        ),
+        actions: [IconButton(
+          icon: Icon(Icons.settings, color: Colors.black),
+          onPressed: () {
+            context.push(const PreferencesView());
+          },
+        )],
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,

@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/extensions/context_extension.dart';
+
 class PreferencesView extends StatelessWidget {
   const PreferencesView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(),
+      appBar: buildAppBar(context),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -38,7 +40,7 @@ class PreferencesView extends StatelessWidget {
     );
   }
 
-  AppBar buildAppBar() {
+  AppBar buildAppBar(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.white,
       leading: IconButton(
@@ -46,7 +48,9 @@ class PreferencesView extends StatelessWidget {
           Icons.arrow_back,
           color: Colors.grey,
         ),
-        onPressed: () {},
+        onPressed: () {
+          context.pop();
+        },
       ),
       elevation: 1,
       title: const Text(
