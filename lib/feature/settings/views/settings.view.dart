@@ -12,64 +12,68 @@ class SettingsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: [IconButton(
-          icon: Icon(Icons.settings, color: Colors.black),
-          onPressed: () {
-            context.push(const PreferencesView());
-          },
-        )],
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.settings, color: Colors.black),
+            onPressed: () {
+              context.push(const PreferencesView());
+            },
+          )
+        ],
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           ClipRRect(
             borderRadius: BorderRadius.circular(50),
-            child: Container(
+            child: const SizedBox(
               height: 150,
               width: 150,
               child: BaseAssetImage(path: ImageConstants.welcomeIllustration),
             ),
           ),
-          SettingsTitleValue(
-              title: "Email",
-              value: "slmdogukan79@gmail.com",
+          const SettingsTitleValue(
+              title: 'Email',
+              value: 'slmdogukan79@gmail.com',
               isUnderline: true),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
+          const Padding(
+            padding: EdgeInsets.all(8),
             child: Divider(),
           ),
-          SettingsTitleValue(
-            title: "Phone",
-            value: "+90 544 316 30 76",
+          const SettingsTitleValue(
+            title: 'Phone',
+            value: '+90 544 316 30 76',
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
+          const Padding(
+            padding: EdgeInsets.all(8),
             child: Divider(),
           ),
-          SettingsTitleValue(
-            title: "Location",
-            value: "İstanbul ,Türkiye",
+          const SettingsTitleValue(
+            title: 'Location',
+            value: 'İstanbul ,Türkiye',
           ),
-          Padding(
-            padding: const EdgeInsets.only(top: 34,left: 24),
-            child: Align(child: Text("Permissions",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18
-
-            )),alignment: Alignment.centerLeft),
+          const Padding(
+            padding: EdgeInsets.only(top: 34, left: 24),
+            child: Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'Permissions',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                )),
           ),
-          PermissionsRow(
+          const PermissionsRow(
             title: 'Save Data',
             icon: Icons.save,
           ),
-          PermissionsRow(
+          const PermissionsRow(
             title: 'Allow Location',
             icon: Icons.location_history,
           ),
-          PermissionsRow(
+          const PermissionsRow(
             title: 'Enable Face ID',
             icon: Icons.face,
           )
         ],
-
       ),
     );
   }
@@ -98,7 +102,7 @@ class SettingsTitleValue extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: Text(
                 title,
-                style: TextStyle(fontSize: 16),
+                style: const TextStyle(fontSize: 16),
               ),
             ),
           ),
@@ -107,10 +111,10 @@ class SettingsTitleValue extends StatelessWidget {
             child: Text(
               value,
               style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
-                  decoration: isUnderline ? TextDecoration.underline : null,),
-
+                fontSize: 14,
+                fontWeight: FontWeight.bold,
+                decoration: isUnderline ? TextDecoration.underline : null,
+              ),
             ),
           ),
         ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../feed/view/feed_view.dart';
 import '../notification/view/notification_view.dart';
 import '../settings/views/settings.view.dart';
 
@@ -20,9 +21,10 @@ class _HomeViewState extends State<HomeView> {
   }
 
   static final List<Widget> _widgetOptions = <Widget>[
-    Scaffold(appBar: AppBar(backgroundColor: Colors.green)),
+    const FeedView(),
     const NotificationView(),
     const SettingsView(),
+
   ];
 
   @override
@@ -33,7 +35,7 @@ class _HomeViewState extends State<HomeView> {
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Feed'),
           BottomNavigationBarItem(
               icon: Icon(Icons.notifications), label: 'Notifications'),
           BottomNavigationBarItem(

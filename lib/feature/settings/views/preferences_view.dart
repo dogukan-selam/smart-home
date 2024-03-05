@@ -80,18 +80,18 @@ class PreferencesTile extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
         color: Colors.white,
-        boxShadow: [
-          const BoxShadow(
+        boxShadow: const [
+          BoxShadow(
             color: Colors.grey,
             blurRadius: 3,
-            offset: Offset(0, 0),
+            offset: Offset.zero,
           )
         ],
       ),
       child: Row(
         children: [
           Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(10),
             child: IconButton(
               onPressed: () {},
               icon: const Icon(
@@ -108,7 +108,8 @@ class PreferencesTile extends StatelessWidget {
               children: [
                 Text(
                   title,
-                  style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  style: const TextStyle(
+                      fontSize: 16, fontWeight: FontWeight.bold),
                 ),
                 Text(
                   subtitle,
@@ -124,7 +125,7 @@ class PreferencesTile extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(right: 12),
             child: Text(
-              "Adjust",
+              'Adjust',
               style: TextStyle(
                   color: Colors.grey[500],
                   fontSize: 25,

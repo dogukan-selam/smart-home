@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'feature/home/home_view.dart';
-import 'feature/settings/views/preferences_view.dart';
 
 void main() {
   runApp(const MyApp());
