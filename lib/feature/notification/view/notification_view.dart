@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../../../core/extensions/context_extension.dart';
 import '../../../product/fake/notification/notifications.dart';
-import '../model/notification_model.dart';
 import 'widgets/notification_list_tile.dart';
 
 class NotificationView extends StatelessWidget {
