@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:smart_home/feature/feed/view/widgets/categories_grid_view.dart';
 
 import '../../../core/widgets/buttons/base_elevated_button.dart';
+import 'widgets/daily_progress_widget.dart';
+
 class FeedView extends StatelessWidget {
   const FeedView({super.key});
 
@@ -48,7 +51,15 @@ class FeedView extends StatelessWidget {
               ],
             ),
           ),
-        //  const DailyProgressWidget(progress: 76)
+          const DailyProgressWidget(progress: 40),
+          const Padding(
+            padding: EdgeInsets.only(top: 16, left: 18, bottom: 8),
+            child: Text(
+              'Categories',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            ),
+          ),
+          const CategoriesGridView()
         ],
       ),
     );

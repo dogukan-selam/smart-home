@@ -15,8 +15,7 @@ class WelcomeImage extends StatelessWidget {
       margin: const EdgeInsets.symmetric(horizontal: 36),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(50),
-        child: const BaseAssetImage(
-            path: ImageConstants.welcomeIllustration),
+        child: const BaseAssetImage(path: ImageConstants.welcomeIllustration),
       ),
     );
   }

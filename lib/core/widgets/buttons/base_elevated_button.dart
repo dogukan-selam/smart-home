@@ -1,5 +1,6 @@
-
 import 'package:flutter/material.dart';
+
+import '../../../product/theme/app_theme.dart';
 
 class BaseElevatedButton extends StatelessWidget {
   const BaseElevatedButton({
@@ -26,7 +27,7 @@ class BaseElevatedButton extends StatelessWidget {
           ),
         ),
         backgroundColor: MaterialStateProperty.all(
-            backgroundColor ?? Colors.deepOrange[500]),
+            backgroundColor ?? AppTheme.primary),
       ),
       child: Text(
         text,

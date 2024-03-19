@@ -28,7 +28,6 @@ class WelcomeView extends StatelessWidget {
                 backgroundColor: Colors.deepOrange[700],
                 onPressed: () {
                   context.push(const NotificationView());
-
                 },
                 child: const Icon(Icons.chevron_right),
               ),
@@ -39,7 +38,3 @@ class WelcomeView extends StatelessWidget {
     );
   }
 }
-
-
-
-
