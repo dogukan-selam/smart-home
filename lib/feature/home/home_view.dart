@@ -24,7 +24,6 @@ class _HomeViewState extends State<HomeView> {
     const FeedView(),
     const NotificationView(),
     const SettingsView(),
-
   ];
 
   @override

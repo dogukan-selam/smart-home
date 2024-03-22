@@ -22,9 +22,7 @@ class NotificationListTile extends StatelessWidget {
         color: Colors.transparent,
         child: InkWell(
           borderRadius: BorderRadius.circular(18),
-          onTap: () {
-
-          },
+          onTap: () {},
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 12),
             child: Row(
