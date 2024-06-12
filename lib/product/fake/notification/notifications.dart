@@ -6,61 +6,61 @@ class FakeNotifications {
         title: 'Energy support system now available',
         description: '',
         isRead: false,
-        type: 'notification'),
+        type: 'notification',),
     NotificationModel(
         title: 'You have an overpayment on your ',
         description: '',
         isRead: false,
-        type: 'notification'),
+        type: 'notification',),
     NotificationModel(
         title: 'Change of address has been confirmed',
         description: '',
         isRead: false,
-        type: 'notification'),
+        type: 'notification',),
     NotificationModel(
         title: 'New offer for high-speed internet',
         description: '',
         isRead: false,
-        type: 'notification'),
+        type: 'notification',),
     NotificationModel(
         title: 'Energy support system now available',
         description: '',
         isRead: false,
-        type: 'notification'),
+        type: 'notification',),
     NotificationModel(
         title: 'You have an overpayment on your heating',
         description: '',
         isRead: false,
-        type: 'notification'),
+        type: 'notification',),
     NotificationModel(
         title: 'Change of address has been confirmed',
         description: '',
         isRead: false,
-        type: 'notification'),
+        type: 'notification',),
     NotificationModel(
         title: 'New offer for high-speed internet',
         description: '',
         isRead: false,
-        type: 'notification'),
+        type: 'notification',),
     NotificationModel(
         title: 'Energy support system now available',
         description: '',
         isRead: false,
-        type: 'notification'),
+        type: 'notification',),
     NotificationModel(
         title: 'You have an overpayment on your heating',
         description: '',
         isRead: false,
-        type: 'notification'),
+        type: 'notification',),
     NotificationModel(
         title: 'Change of address has been confirmed',
         description: '',
         isRead: false,
-        type: 'notification'),
+        type: 'notification',),
     NotificationModel(
         title: 'New offer for high-speed internet',
         description: '',
         isRead: false,
-        type: 'notification'),
+        type: 'notification',),
   ];
 }

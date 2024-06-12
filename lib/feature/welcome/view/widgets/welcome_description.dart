@@ -15,14 +15,14 @@ class WelcomeDescription extends StatelessWidget {
           style: TextStyle(
               color: Colors.grey[700],
               fontWeight: FontWeight.bold,
-              fontSize: 36),
+              fontSize: 36,),
         ),
         Text(
           'Control your home with ease',
           style: TextStyle(
               color: Colors.grey[500],
               fontWeight: FontWeight.bold,
-              fontSize: 20),
+              fontSize: 20,),
         ),
       ],
     );

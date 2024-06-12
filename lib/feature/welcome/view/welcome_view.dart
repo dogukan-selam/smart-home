@@ -32,7 +32,7 @@ class WelcomeView extends StatelessWidget {
                 child: const Icon(Icons.chevron_right),
               ),
             ),
-          )
+          ),
         ],
       ),
     );
