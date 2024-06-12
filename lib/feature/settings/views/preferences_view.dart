@@ -24,7 +24,7 @@ class PreferencesView extends StatelessWidget {
           const PreferencesTile(
             title: 'Security',
             subtitle: 'Notifications',
-          )
+          ),
         ],
       ),
     );
@@ -84,8 +84,7 @@ class PreferencesTile extends StatelessWidget {
           BoxShadow(
             color: Colors.grey,
             blurRadius: 3,
-            offset: Offset.zero,
-          )
+          ),
         ],
       ),
       child: Row(
@@ -109,7 +108,7 @@ class PreferencesTile extends StatelessWidget {
                 Text(
                   title,
                   style: const TextStyle(
-                      fontSize: 16, fontWeight: FontWeight.bold),
+                      fontSize: 16, fontWeight: FontWeight.bold,),
                 ),
                 Text(
                   subtitle,
@@ -129,9 +128,9 @@ class PreferencesTile extends StatelessWidget {
               style: TextStyle(
                   color: Colors.grey[500],
                   fontSize: 25,
-                  fontWeight: FontWeight.bold),
+                  fontWeight: FontWeight.bold,),
             ),
-          )
+          ),
         ],
       ),
     );

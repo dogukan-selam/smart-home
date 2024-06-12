@@ -18,11 +18,10 @@ class SettingsView extends StatelessWidget {
             onPressed: () {
               context.push(const PreferencesView());
             },
-          )
+          ),
         ],
       ),
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           ClipRRect(
             borderRadius: BorderRadius.circular(50),
@@ -35,7 +34,7 @@ class SettingsView extends StatelessWidget {
           const SettingsTitleValue(
               title: 'Email',
               value: 'slmdogukan79@gmail.com',
-              isUnderline: true),
+              isUnderline: true,),
           const Padding(
             padding: EdgeInsets.all(8),
             child: Divider(),
@@ -59,7 +58,7 @@ class SettingsView extends StatelessWidget {
                 child: Text(
                   'Permissions',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-                )),
+                ),),
           ),
           const PermissionsRow(
             title: 'Save Data',
@@ -72,7 +71,7 @@ class SettingsView extends StatelessWidget {
           const PermissionsRow(
             title: 'Enable Face ID',
             icon: Icons.face,
-          )
+          ),
         ],
       ),
     );
@@ -142,7 +141,7 @@ class PermissionsRow extends StatelessWidget {
             child: Icon(icon),
           ),
           Expanded(child: Text(title)),
-          Switch(value: true, onChanged: (bool value) {})
+          Switch(value: true, onChanged: (bool value) {}),
         ],
       ),
     );

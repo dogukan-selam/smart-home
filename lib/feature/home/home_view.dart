@@ -36,9 +36,9 @@ class _HomeViewState extends State<HomeView> {
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Feed'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.notifications), label: 'Notifications'),
+              icon: Icon(Icons.notifications), label: 'Notifications',),
           BottomNavigationBarItem(
-              icon: Icon(Icons.account_circle_sharp), label: 'Profile'),
+              icon: Icon(Icons.account_circle_sharp), label: 'Profile',),
         ],
       ),
     );

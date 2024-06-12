@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:smart_home/feature/feed/view/widgets/categories_grid_view.dart';
 
 import '../../../core/widgets/buttons/base_elevated_button.dart';
+import 'widgets/categories_grid_view.dart';
 import 'widgets/daily_progress_widget.dart';
 
 class FeedView extends StatelessWidget {
@@ -59,7 +59,7 @@ class FeedView extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             ),
           ),
-          const CategoriesGridView()
+          const CategoriesGridView(),
         ],
       ),
     );

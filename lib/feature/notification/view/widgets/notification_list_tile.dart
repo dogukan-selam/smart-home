@@ -17,7 +17,7 @@ class NotificationListTile extends StatelessWidget {
       height: 70,
       width: 10,
       decoration: BoxDecoration(
-          color: Colors.grey[200], borderRadius: BorderRadius.circular(18)),
+          color: Colors.grey[200], borderRadius: BorderRadius.circular(18),),
       child: Material(
         color: Colors.transparent,
         child: InkWell(

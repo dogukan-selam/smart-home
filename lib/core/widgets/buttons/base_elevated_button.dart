@@ -27,7 +27,7 @@ class BaseElevatedButton extends StatelessWidget {
           ),
         ),
         backgroundColor: WidgetStateProperty.all(
-            backgroundColor ?? AppTheme.primary),
+            backgroundColor ?? AppTheme.primary,),
       ),
       child: Text(
         text,
