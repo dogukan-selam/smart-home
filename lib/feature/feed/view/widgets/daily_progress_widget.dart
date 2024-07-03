@@ -29,17 +29,17 @@ class DailyProgressWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Text(
+              Text(
                 'Daily Progress',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               CircleAvatar(
                 backgroundColor: AppTheme.primary,
                 radius: 18,
-                child: const Icon(
+                child: Icon(
                   Icons.person,
                   color: Colors.white,
                 ),
